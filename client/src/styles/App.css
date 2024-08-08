@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #182037;
+    color: #ffffff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #25253a;
+    border-bottom: 2px solid #3a3a5c;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #f2709c;
+  }
+  
+  .back-button {
+    background-color: #f2709c;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    flex: 1;
+  }
+  
+  .screen {
+    display: none;
+    flex: 1;
+  }
+  
+  #screen-1 {
+    display: flex;
+  }
+  
+  #screen-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .code-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid #3a3a5c;
+  }
+  
+  .question-section {
+    background-color: #2b2b3b;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .question-section h2 {
+    margin-top: 0;
+  }
+  
+  #language-selector {
+    background-color: #2b2b3b; 
+    color: #ffffff;            
+    border: 1px solid #3a3a5c; 
+    border-radius: 5px;       
+    padding: 10px;            
+    font-size: 16px;          
+    margin-bottom: 20px;      
+  }
+  
+  #language-selector option {
+    background-color: #2b2b3b; 
+    color: #ffffff;            
+  }
+  
+  .CodeMirror {
+    height: 300px;
+    background-color: #2b2b3b;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+  }
+  
+  .code-controls {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  
+  .run-button, .reset-button, .submit-button, .analysis-button {
+    background-color: #f2709c;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .run-button, .reset-button, .submit-button {
+    margin-right: 20px;
+  }
+  
+  .output-section {
+    margin-top: 20px;
+  }
+  
+  .output-section h3 {
+    margin: 0;
+  }
+  
+  #output {
+    background-color: #2b2b3b;
+    padding: 10px;
+    color: #ffffff;
+    border: 1px solid #3a3a5c;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .chat-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-left: 2px solid #3a3a5c;
+  }
+  
+  .interviewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .interviewer img {
+    width: 200px;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  
+  .interviewer p {
+    margin: 0;
+    font-size: 25px;
+  }
+  
+  .voice-wave {
+    width: 100%;
+    height: 60px;
+    background-color: #3a3a5c;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .transcript-section {
+    flex: 1;
+    background-color: #2b2b3b;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+  }
+  
+  .chat-window {
+    height: 100%;
+  }
+  
+  .chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .chat-input button {
+    background-color: #f2709c;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  /* Styles for the second screen */
+  #screen-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .review-section {
+    background-color: #2b2b3b;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .review-section h2 {
+    margin-top: 0;
+  }
+  
+  .score-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .score-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f2709c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  
+  .details {
+    text-align: left;
+  }
+  
+  .detailed-feedback, .recommendations {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .skill-chart {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    background-color: #f2709c;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }  
